@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../Java/repository/org/projectlombok/lombok/1.16.18/lombok-1.16.18.jar" />
+        </processorPath>
+        <module name="micro-eureka" />
+        <module name="microservice-api" />
+        <module name="microservice-common" />
+        <module name="microservice-config-3344" />
+        <module name="microservice-consumer-dept-80" />
+        <module name="microservice-consumer-dept-fegin" />
+        <module name="microservice-provider-dept-8001" />
+        <module name="microservice-provider-dept-8002" />
+        <module name="microservice-provider-dept-hystrix-8001" />
+        <module name="microservice-zuul-gateway-9527" />
+        <module name="microservicecloud-consumer-hystrix-dashboard" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="demo11111" target="1.7" />
+      <module name="microservice-student-provider-1001" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

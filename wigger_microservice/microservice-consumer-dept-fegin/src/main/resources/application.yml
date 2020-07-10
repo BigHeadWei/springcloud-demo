@@ -1,0 +1,30 @@
+server:
+  port: 1104
+
+spring:
+   application:
+    name: microservicec-dept
+   datasource:
+    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+    driver-class-name: com.mysql.jdbc.Driver              # mysql驱动包
+    url: jdbc:mysql://121.37.157.36:3306/springcloud_test?autoReconnect=true&useUnicode=true&characterEncoding=utf8              # 数据库名称
+    username: root
+    password: Ww@19941104
+    dbcp2:
+      min-idle: 5                                           # 数据库连接池的最小维持连接数
+      initial-size: 5                                       # 初始化连接数
+      max-total: 5                                          # 最大连接数
+      max-wait-millis: 200                                  # 等待连接获取的最大超时时间
+
+feign:
+  hystrix:
+    enabled: true #添加对熔断器的支持
+
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+     defaultZone: http://127.0.0.1:8367/eureka
+     #下面这个是Eureka集群配置，需要修改hosts文件，增加域名映射为节省本机资源，就不做Eureka集群了
+#      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+
